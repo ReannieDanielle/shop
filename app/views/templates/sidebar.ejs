@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+    <link href='/assets/x_full_calendar/fullcalendar.css' rel='stylesheet' />
+    <link href='/assets/x_full_calendar/fullcalendar.print.css' rel='stylesheet' media='print' />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Jeepney Management</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <!-- CSS Files -->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/assets/css/now-ui-dashboard.css?v=1.0.1" rel="stylesheet" />
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link href="/assets/demo/demo.css" rel="stylesheet" />
+</head>
+
+<body class="">
+    <div class="wrapper ">
+        <div class="sidebar" data-color="black">
+            <div class="logo">
+                <a href="#" class="simple-text logo-normal">
+                    <img src="../assets/img/jeep.png" style="width:20%; height:20%;">
+                    Kingdom Proclaimers
+                </a>
+    </div>
+
+            <div class="sidebar-wrapper">
+                <ul class="nav">
+                    <li>
+                        <a href="/admin">
+                            <i class="now-ui-icons design_app"></i>
+                            <p>Dashboard</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#pagesMaintenance" class="collapsed" aria-expanded="false">                         
+                            <i class="now-ui-icons transportation_bus-front-12"></i>                  
+                                <p>Maintenance<b class="caret"></b></p>
+                        </a>    
+                        <div class="collapse" id="pagesMaintenance">
+                            <ul class="nav">                       
+                                <li>
+                                    <span class="sidebar-mini-icon"></span>
+                                        <a href="/admin/maintenance/route">
+                                            <i class="now-ui-icons location_pin"></i>
+                                            <span class="sidebar-normal">
+                                                Route
+                                            </span>
+                                        </a>
+                                </li>
+                                <li>
+                                    <span class="sidebar-mini-icon"></span>
+                                    <a href="/admin/maintenance/driver">
+                                        <i class="now-ui-icons business_badge"></i>
+                                        <span class="sidebar-normal">
+                                            Driver
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <span class="sidebar-mini-icon"></span>
+                                    <a href="/admin/maintenance/stocks">
+                                        <i class="now-ui-icons ui-2_settings-90"></i>
+                                        <span class="sidebar-normal">
+                                        <p>Auto Supplies</p>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <span class="sidebar-mini-icon"></span>
+                                    <a href="/admin/maintenance/inspection">
+                                        <i class="now-ui-icons education_glasses"></i>
+                                        <span class="sidebar-normal">
+                                            Inspection
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <span class="sidebar-mini-icon"></span>
+                                    <a href="/admin/maintenance/Renting">
+                                        <i class="now-ui-icons shopping_delivery-fast"></i>
+                                        <span class="sidebar-normal">
+                                            Renting
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- <li>
+                        <a data-toggle="collapse" href="#pagesExamples" class="collapsed" aria-expanded="false">                         
+                            <i class="now-ui-icons transportation_bus-front-12"></i>                  
+                                <p>Units<b class="caret"></b></p>
+                        </a>    
+                        <div class="collapse" id="pagesExamples">
+                            <ul class="nav">                       
+                                <li>
+                                    <span class="sidebar-mini-icon"></span>
+                                        <a href="/admin/units/info">
+                                            <i class="now-ui-icons travel_info"></i>
+                                            <span class="sidebar-normal">
+                                                Information
+                                            </span>
+                                        </a>
+                                </li>
+                                <li>
+                                    <span class="sidebar-mini-icon"></span>
+                                    <a href="/admin/units/status">
+                                        <i class="now-ui-icons shopping_delivery-fast"></i>
+                                        <span class="sidebar-normal">
+                                            Status
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li> -->
+                    <li>
+                        <a href="/admin/status">
+                            <i class="now-ui-icons travel_info"></i>
+                            <p>Jeepney Status</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#pagesCollection" class="collapsed" aria-expanded="false">                         
+                            <i class="now-ui-icons business_bank"></i>    
+                            <p>Collection<b class="caret"></b></p>
+                        </a>    
+                        <div class="collapse" id="pagesCollection">
+                            <ul class="nav">                       
+                                <li>
+                                    <span class="sidebar-mini-icon"></span>
+                                        <a href="/admin/collection/boundary">
+                                            <i class="now-ui-icons business_money-coins"></i>                     
+                                            <span class="sidebar-normal">
+                                                Boundary
+                                            </span>
+                                        </a>
+                                </li>
+                                <li>
+                                    <span class="sidebar-mini-icon"></span>
+                                        <a href="/admin/collection/penalty">
+                                            <i class="now-ui-icons objects_diamond"></i>
+                                        <span class="sidebar-normal">
+                                            Penalty
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <span class="sidebar-mini-icon"></span>
+                                    <a href="/admin/collection/Renter">
+                                        <i class="now-ui-icons sport_user-run"></i>
+                                        <span class="sidebar-normal">
+                                        <p>Renter</p>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    <li>
+                        <a href="/admin/offenses_and_penalties">
+                            <i class="now-ui-icons ui-1_bell-53"></i>
+                            <p>Offenses and Penalties</p>
+                        </a>
+                    </li> 
+                    <li>
+                        <a data-toggle="collapse" href="#employeeExamples" class="collapsed" aria-expanded="false">                         
+                            <i class="now-ui-icons users_single-02"></i>                  
+                                <p>Staff<b class="caret"></b></p>
+                        </a>    
+                        <div class="collapse" id="employeeExamples">
+                            <ul class="nav">                       
+                                <!-- <li>
+                                    <span class="sidebar-mini-icon"></span>
+                                        <a href="/admin/drivers_and_staffs/driver">
+                                            <i class="now-ui-icons emoticons_satisfied"></i>
+                                            <span class="sidebar-normal">
+                                                Driver
+                                            </span>
+                                        </a>
+                                </li> -->
+                                <li>
+                                    <span class="sidebar-mini-icon"></span>
+                                        <a href="/admin/drivers_and_staffs/staff">
+                                            <i class="now-ui-icons emoticons_satisfied"></i>
+                                            <span class="sidebar-normal">
+                                                Staff
+                                            </span>
+                                        </a>
+                                </li>
+                                <li>
+                                    <span class="sidebar-mini-icon"></span>
+                                        <a href="/admin/drivers_and_staffs/mechanic">
+                                            <i class="now-ui-icons emoticons_satisfied"></i>
+                                            <span class="sidebar-normal">
+                                                Mechanic
+                                            </span>
+                                        </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="/admin/events">
+                            <i class="now-ui-icons ui-1_calendar-60"></i>
+                                <p>Events</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>

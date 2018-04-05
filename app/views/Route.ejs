@@ -1,0 +1,155 @@
+<% include templates/sidebar %>
+<% include templates/topbar %>
+            <!-- End Navbar -->
+            <div class="panel-header panel-header-sm">
+            </div>
+            <div class="content">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <div id="myBtnContainer">
+                                    <button class="btn active" onclick="filterSelection('all')"> Show all Route</button>
+                                    <button class="btn" onclick="filterSelection('cars')"> Pasig-Quiapo</button>
+                                    <button class="btn" onclick="filterSelection('animals')"> Boni-StopnNShop</button>
+                                    <button class="btn" onclick="filterSelection('fruits')"> Vergara-Kalentong</button>
+                                    <button class="btn" onclick="filterSelection('colors')"> Sogo-Kalentong</button>
+                                    </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead class=" text-primary">
+                                                <th>Plate Number</th>
+                                                <th>Model</th>
+                                                <th>Year Acquired</th>
+                                                <th>Action</th>
+                                            <tr>
+                                                <td>MPS 1234</td>
+                                                <td>2015</td>
+                                                <td>2015</td>
+                                                <td>
+                                                    <button class="btn btn-primary" type="button"data-toggle="modal" data-target="#myModal3">
+                                                        <i class="now-ui-icons ui-1_simple-remove"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                                <td>AOA 1975</td>
+                                                <td>2012</td>
+                                                <td>2016</td>
+                                                <td>
+                                                    <button class="btn btn-primary" type="button"data-toggle="modal" data-target="#myModal3">
+                                                        <i class="now-ui-icons ui-1_simple-remove"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            </tr>
+                                                <td>TGD 2316</td>
+                                                <td>2010</td>
+                                                <td>2013</td>
+                                                <td>
+                                                    <button class="btn btn-primary" type="button"data-toggle="modal" data-target="#myModal3">
+                                                        <i class="now-ui-icons ui-1_simple-remove"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            </tr>
+                                                <td>TID 1236</td>
+                                                <td>2011</td>
+                                                <td>2014</td>
+                                                <td>
+                                                    <button class="btn btn-primary" type="button"data-toggle="modal" data-target="#myModal3">
+                                                        <i class="now-ui-icons ui-1_simple-remove"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            </tr>
+                                                <td>PMO 1237</td>
+                                                <td>2016</td>
+                                                <td>2017</td>
+                                                <td>
+                                                    <button class="btn btn-primary" type="button"data-toggle="modal" data-target="#myModal3">
+                                                        <i class="now-ui-icons ui-1_simple-remove"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            </tr>
+                                                <td>OAA 9234</td>
+                                                <td>2009</td>
+                                                <td>2011</td>
+                                                <td>
+                                                    <button class="btn btn-primary" type="button"data-toggle="modal" data-target="#myModal3">
+                                                        <i class="now-ui-icons ui-1_simple-remove"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            </tr>
+                                                <td>GTA 8734</td>
+                                                <td>2015</td>
+                                                <td>2017</td>
+                                                <td>
+                                                    <button class="btn btn-primary" type="button"data-toggle="modal" data-target="#myModal3">
+                                                        <i class="now-ui-icons ui-1_simple-remove"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            </tr>
+                                                <td>ITE 6784</td>
+                                                <td>2017</td>
+                                                <td>2017</td>
+                                                <td>
+                                                    <button class="btn btn-primary" type="button"data-toggle="modal" data-target="#myModal3">
+                                                        <i class="now-ui-icons ui-1_simple-remove"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            </tr>
+                                                <td>DCB 5294</td>
+                                                <td>2015</td>
+                                                <td>2017</td>
+                                                <td>
+                                                    <button class="btn btn-primary" type="button"data-toggle="modal" data-target="#myModal3">
+                                                        <i class="now-ui-icons ui-1_simple-remove"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            </tr>
+                                                <td>EZB 4936</td>
+                                                <td>2015</td>
+                                                <td>2015</td>
+                                                <td>
+                                                    <button class="btn btn-primary" type="button"data-toggle="modal" data-target="#myModal3">
+                                                        <i class="now-ui-icons ui-1_simple-remove"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            </thead>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            <footer class="footer">
+                <div class="container-fluid">
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+<!--   Core JS Files   -->
+<script src="/assets/js/core/jquery.min.js"></script>
+<script src="/assets/js/core/popper.min.js"></script>
+<script src="/assets/js/core/bootstrap.min.js"></script>
+<script src="/assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+<!--  Google Maps Plugin    -->
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+<!-- Chart JS -->
+<script src="/assets/js/plugins/chartjs.min.js"></script>
+<!--  Notifications Plugin    -->
+<script src="/assets/js/plugins/bootstrap-notify.js"></script>
+<!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
+<script src="/assets/js/now-ui-dashboard.js?v=1.0.1"></script>
+<!-- Now Ui Dashboard DEMO methods, don't include it in your project! -->
+<script src="/assets/demo/demo.js"></script>
+
+</html>
