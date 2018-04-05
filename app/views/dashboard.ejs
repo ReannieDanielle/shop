@@ -1,155 +1,248 @@
-<% include templates/sidebar %>
-<% include templates/topbar %>
-            <!-- End Navbar -->
-            <div class="panel-header panel-header-sm">
-            </div> 
-            <div class="content">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6">
-                        <div class="card card-chart">
-                            <div class="card-header">
-                                <h5 class="card-category">Auto Supplies</h5>
-                                <h4 class="card-title">Stocks</h4>
-                                <div class="dropdown">
-                                    <button type="button" class="btn btn-round btn-default dropdown-toggle btn-simple btn-icon no-caret" data-toggle="dropdown">
-                                        <i class="now-ui-icons loader_gear"></i>
-                                    </button>
-                                    <div class="dropdown-menu dropdown-menu-right">
-                                        <a class="dropdown-item" href="#">Action</a>
-                                        <a class="dropdown-item" href="#">Another action</a>
-                                        <a class="dropdown-item" href="#">Something else here</a>
-                                        <a class="dropdown-item text-danger" href="#">Remove Data</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <table class="table">
-                                    <thead class=" text-primary">
-                                        <th>Product ID</th>
-                                            <th>Description</th>
-                                            <th>Quantity</th>
-                                    </thead>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Spark Plug</td>
-                                            <td><span class="badge badge-danger">Out of Stocks</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Distributor</td>
-                                            <td>4</td>
-                                        </tr>
-                                        <tr>
-                                            <td>5</td>
-                                            <td>Piston</td>
-                                            <td>1</td>
-                                        </tr>
-                                        <tr>
-                                            <td>9</td>
-                                            <td>Oil</td>
-                                            <td>3</td>
-                                        </tr>
-                                        <tr>
-                                            <td>10</td>
-                                            <td>Interior</td>
-                                            <td>5</td>
-                                        </tr>
-                                    </table>
-                            </div>
-                            <div class="card-footer">
-                                <div class="stats">                                   
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="card card-chart">
-                            <div class="card-header">
-                                <h5 class="card-category">Upcoming Events</h5>
-                                <h4 class="card-title"></h4>
-                            </div>
-                            <div class="card-body">
-                                <div class="table-responsive">
-                                    <table class="table">
-                                        <thead class=" text-primary">
-                                            <th>Date</th>
-                                            <th>Description</th>
-                                            <th>Time</th>
-                                        </thead>
-                                        <tr>
-                                            <td>03/27/2018</td>
-                                            <td>Meeting</td>
-                                            <td>4:00PM</td>
-                                        <tr>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="card-footer">
-                                <div class="stats">
-                                    <i class="now-ui-icons ui-2_time-alarm"></i>    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                  <div class="col-md-12">
-                      <div class="card">
-                        <div class="card-header">
-                            <h5 class="card-category">Offenses And Penalties</h5>
-                            <h4 class="card-title"></h4>
-                        </div>
-                        <div class="card-body">
-                            <div class="table-responsive">
-                              <table class="table">
-                                <thead class=" text-primary">
-                                  <th>ID</th>
-                                  <th>Name</th>
-                                  <th>Classification</th>
-                                  <th>Offense</th>
-                                  <th>Amount of Penalty</th>
-                                </thead>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Ang Casasis</td>
-                                    <td>Boundary</td>
-                                    <td>3rd</td>
-                                    <td>P5,000.00</td>
-                                </tr>
-                              </table>
-                            </div>
-                        </div>
-                      </div>
-                  </div>
-                </div>
-            </div>
-            <footer class="footer">
-                <div class="container-fluid">
-        
-                </div>
-            </footer>
+<!doctype html>  
+<html lang="en">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+        <a class="navbar-brand" href="#">WebSiteName</a>
         </div>
+        <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Products Category
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Bath and Body</a></li>
+            <li><a href="#">Beauty tools</a></li>
+            <li><a href="#">Hair care</a></li>
+            <li><a href="#">Makeup</a></li>
+            <li><a href="#">Skin care</a></li>
+          </ul>
+        </li>
+        <li class="active"><a href="/admin/order">Order</a></li>
+        <li><a href="#">Sales</a></li>
+        </ul>
+        <form class="navbar-form navbar-left" action="/action_page.php">
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Hello <%= name %>!</a></li>
+        <li><a href="/home/logout"><span class="glyphicon glyphicon-log-in"></span> Log out</a></li>
+        </ul>
     </div>
+    </nav>
+
+    
+
+<div class="container-fluid">
+      
+      <div class="row row-offcanvas row-offcanvas-left">
+        
+         <div class="col-sm-3 col-md-2 sidebar-offcanvas" id="sidebar" role="navigation">
+           
+            <ul class="nav nav-sidebar">
+              <li class="active"><a href="#">Overview</a></li>
+              <li><a href="http://bootstrapzero.com" target="_ext">Themes</a></li>
+              <li><a href="http://bootstrap.theme.cards" target="_ext">Analytics</a></li>
+              <li><a href="https://wrapbootstrap.com?ref=skelly" target="_ext">Export</a></li>
+            </ul>
+            <ul class="nav nav-sidebar">
+              <li><a href="/admin/product">Product</a></li>
+              <li><a href="/admin/order">Orders</a></li>
+              <li><a href="">Reports</a></li>
+              
+          
+        </div><!--/span-->
+        
+        <div class="col-sm-9 col-md-10 main">
+          
+          <!--toggle sidebar button-->
+          <p class="visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas"><i class="glyphicon glyphicon-chevron-left"></i></button>
+          </p>
+          
+		  <h1 class="page-header">
+            Dashboard
+            <p class="lead">(<a href="http://www.bootply.com/128936">with off-canvas sidebar</a>)</p>
+          </h1>
+          <div class="row placeholders">
+            <div class="col-xs-8 col-sm-2 placeholder text-center">
+              <img src="//placehold.it/200/6666ff/fff" class="center-block img-responsive img-circle" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Bath and Body Products</span>
+            </div>
+          <div class="row placeholders">
+            <div class="col-xs-8 col-sm-2 placeholder text-center">
+              <img src="//placehold.it/200/6666ff/fff" class="center-block img-responsive img-circle" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Beauty Tools Products</span>
+            </div>
+            <div class="col-xs-8 col-sm-2 placeholder text-center">
+              <img src="//placehold.it/200/66ff66/fff" class="center-block img-responsive img-circle" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Hair Care Products</span>
+            </div>
+            <div class="col-xs-8 col-sm-2 placeholder text-center">
+              <img src="//placehold.it/200/6666ff/fff" class="center-block img-responsive img-circle" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Makeup Products</span>
+            </div>
+            <div class="col-xs-8 col-sm-2 placeholder text-center">
+              <img src="//placehold.it/200/66ff66/fff" class="center-block img-responsive img-circle" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Skin Care Products</span>
+            </div>
+          </div>
+          
+          <hr>
+
+          <h2 class="sub-header">Section title</h2>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Header</th>
+                  <th>Header</th>
+                  <th>Header</th>
+                  <th>Header</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1,001</td>
+                  <td>Lorem</td>
+                  <td>ipsum</td>
+                  <td>dolor</td>
+                  <td>sit</td>
+                </tr>
+                <tr>
+                  <td>1,002</td>
+                  <td>amet</td>
+                  <td>consectetur</td>
+                  <td>adipiscing</td>
+                  <td>elit</td>
+                </tr>
+                <tr>
+                  <td>1,003</td>
+                  <td>Integer</td>
+                  <td>nec</td>
+                  <td>odio</td>
+                  <td>Praesent</td>
+                </tr>
+                <tr>
+                  <td>1,003</td>
+                  <td>libero</td>
+                  <td>Sed</td>
+                  <td>cursus</td>
+                  <td>ante</td>
+                </tr>
+                <tr>
+                  <td>1,004</td>
+                  <td>dapibus</td>
+                  <td>diam</td>
+                  <td>Sed</td>
+                  <td>nisi</td>
+                </tr>
+                <tr>
+                  <td>1,005</td>
+                  <td>Nulla</td>
+                  <td>quis</td>
+                  <td>sem</td>
+                  <td>at</td>
+                </tr>
+                <tr>
+                  <td>1,006</td>
+                  <td>nibh</td>
+                  <td>elementum</td>
+                  <td>imperdiet</td>
+                  <td>Duis</td>
+                </tr>
+                <tr>
+                  <td>1,007</td>
+                  <td>sagittis</td>
+                  <td>ipsum</td>
+                  <td>Praesent</td>
+                  <td>mauris</td>
+                </tr>
+                <tr>
+                  <td>1,008</td>
+                  <td>Fusce</td>
+                  <td>nec</td>
+                  <td>tellus</td>
+                  <td>sed</td>
+                </tr>
+                <tr>
+                  <td>1,009</td>
+                  <td>augue</td>
+                  <td>semper</td>
+                  <td>porta</td>
+                  <td>Mauris</td>
+                </tr>
+                <tr>
+                  <td>1,010</td>
+                  <td>massa</td>
+                  <td>Vestibulum</td>
+                  <td>lacinia</td>
+                  <td>arcu</td>
+                </tr>
+                <tr>
+                  <td>1,011</td>
+                  <td>eget</td>
+                  <td>nulla</td>
+                  <td>Class</td>
+                  <td>aptent</td>
+                </tr>
+                <tr>
+                  <td>1,012</td>
+                  <td>taciti</td>
+                  <td>sociosqu</td>
+                  <td>ad</td>
+                  <td>litora</td>
+                </tr>
+                <tr>
+                  <td>1,013</td>
+                  <td>torquent</td>
+                  <td>per</td>
+                  <td>conubia</td>
+                  <td>nostra</td>
+                </tr>
+                <tr>
+                  <td>1,014</td>
+                  <td>per</td>
+                  <td>inceptos</td>
+                  <td>himenaeos</td>
+                  <td>Curabitur</td>
+                </tr>
+                <tr>
+                  <td>1,015</td>
+                  <td>sodales</td>
+                  <td>ligula</td>
+                  <td>in</td>
+                  <td>libero</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <a href="http://www.bootply.com/gkTHCwjLO9">Get the Source Code</a> | <a href="http://bootstrap.theme.cards">More free Bootstrap themes</a>
+          
+      </div><!--/row-->
+	</div>
+</div><!--/.container-->
+
+<footer>
+  <p class="pull-right">©2016 Company</p>
+</footer>
+        
 </body>
-
-<!--   Core JS Files   -->
-<script src="/assets/js/core/jquery.min.js"></script>
-<script src="/assets/js/core/popper.min.js"></script>
-<script src="/assets/js/core/bootstrap.min.js"></script>
-<script src="/assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
-<!--  Google Maps Plugin    -->
-<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
-<!-- Chart JS -->
-<script src="/assets/js/plugins/chartjs.min.js"></script>
-<!--  Notifications Plugin    -->
-<script src="/assets/js/plugins/bootstrap-notify.js"></script>
-<!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
-<script src="/assets/js/now-ui-dashboard.js?v=1.0.1"></script>
-<!-- Now Ui Dashboard DEMO methods, don't include it in your project! -->
-<script src="/assets/demo/demo.js"></script>
-<script>
-    $(document).ready(function() {
-        // Javascript method's body can be found in assets/js/demos.js
-        demo.initDashboardPageCharts();
-    });
-</script>
-
 </html>

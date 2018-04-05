@@ -1,0 +1,95 @@
+<!doctype html>  
+<html lang="en">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Hello <%= name %></a></li>
+            <li><a href="/home/logout"><span class="glyphicon glyphicon-log-in"></span> Log out</a></li>
+          </ul>
+          <form class="navbar-form navbar-right">
+            <input type="text" class="form-control" placeholder="Search...">
+          </form>
+        </div>
+      </div>
+</nav>
+    
+
+<style>
+    .product-list {
+    margin-top: 25px;
+}
+
+ .product-list .product {
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    min-height: 300px;
+}
+  .product-list .product .product-info {
+    min-height: 220px;
+}
+.product-info button
+{
+  border:0;
+  background:none;
+}
+</style>
+
+<body>
+    <br>
+    <br>
+
+    <div class="container">
+        <div class="row product-list">
+        <div class="col-sm-3 col-xs-6">
+        	<div class="product">
+            	<div class="product-info">
+					<button type="submit" name="imageSubmit" value="btn_was_clicked"><img src="https://ure.360recognition.com/direct/user/product/11591347_70.jpg" class="img-responsive tb-center tb-maxheight-115" alt="..."></button>
+	                <p class="primary-font">
+						TH Monogram Coated Canvas Cross Body
+	                </p>
+	                <p class="text-muted">11591347</p>
+					
+	            </div>
+				<div class="btn-group product-action">
+				
+ 				<button type="submit" name="Add to cart" class="btn btn-primary cart-btn"><i class="fa fa-shopping-cart">
+				</i>
+				
+				To Cart
+				
+				</button>
+				</div>
+			</div>
+        </div>
+    </div>
+    <tbody>
+     
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>

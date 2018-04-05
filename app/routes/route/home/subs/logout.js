@@ -2,7 +2,7 @@ var router = require( "express" ).Router()
 
 router.get( "/", ( req, res ) => {
 	delete req.session
-	res.redirect( "/home" )
+	res.redirect( "/" )
 })
 
-module.exports = router
+module.exports = router;

@@ -1,13 +1,14 @@
-exports.authed = (req, res, next) => {
-	if(req.session.user)
-		res.redirect("/user")
-	else
-		next()
+exports.hasAuthAdmin = (req, res, next) => {
+    if (req.session && req.session.admin && Object.keys(req.session.admin).length > 0) return next();
+    return res.redirect('/home/login?unauthorized');
+}
+exports.hasAuthMember = (req, res, next) => {
+    if (req.session && req.session.member && Object.keys(req.session.member).length > 0) return next();
+    return res.redirect('/home/login?unauthorized');
 }
 
-exports.nauthed = (req, res, next) => {
-	if(req.session.user)
-		next()
-	else
-		res.redirect("/login")
+exports.noAuthed = (req, res, next) => {
+    if (req.session && req.session.user && Object.keys(req.session.user).length > 0) return res.redirect('/');
+    return next();
 }
+

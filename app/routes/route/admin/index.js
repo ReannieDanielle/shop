@@ -1,14 +1,14 @@
 var router = require( "express" ).Router()
+var mid = require( "../../../midwares" )
+
+// router.use( mid.hasAuthAdmin )
 
 router.get( "/", (req, res) => {
 	res.render( "dashboard" );
 })
-router.use( "/collection", require( "./subs/collection" ) )
-router.use( "/maintenance", require( "./subs/maintenance" ) )
-router.use( "/profile", require( "./subs/profile" ) )
-router.use( "/status", require( "./subs/status") )
-router.use( "/offenses_and_penalties", require( "./subs/offenses_and_penalties" ) )
-router.use( "/drivers_and_staffs", require( "./subs/drivers_and_staffs" ) )
-router.use( "/events", require( "./subs/events" ) )
+router.use( "/orders", require( "./subs/orders" ) )
+router.use( "/product", require( "./subs/product" ) )
+router.use( "/order", require( "./subs/order" ) )
+router.use( "/dashboard", require( "./subs/dashboard" ) )
 
 exports.admin = router
